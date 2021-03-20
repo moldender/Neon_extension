@@ -2,9 +2,15 @@
   "manifest_version": 2,
 
   "name": "Neon bővítmény",
-  "description": "asd",
-  "version": "1.0",
-
+  "description": "Az első funkciógazdag verzió",
+  "version": "2.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+	  
+    }
+  ],
  "background": {
     "scripts": ["popup.js"],
     "persistent": false
@@ -15,7 +21,10 @@
     "default_popup": "popup.html"
   },
   "permissions": [
+    "alarms",
 	"tabs",
+	"notifications",
+    "webNavigation",
 	"<all_urls>",
     "https://ajax.googleapis.com/",
 	"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
