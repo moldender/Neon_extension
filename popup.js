@@ -4,6 +4,25 @@ var hostnamelink;
 var valasz;
 
 
+chrome.tabs.getSelected(null, function (tab) {
+	
+	chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+		
+		let url = tabs[0].url;
+		console.log(url)
+		
+		
+		function popping() {
+			var index_url = "https://neoncommunity.ml/extension/requestpage.html?linkie=" + url;
+			window.open(index_url, 'Popup Window', 'width=392,height=362,location=yes,scrollbars=yes');
+		}
+	
+		document.getElementById('jelentogomb').addEventListener("click", popping);
+		
+	});
+	
+})
+
 
 chrome.tabs.getSelected(null, function (tab) {
 	var link = document.createElement('a');
@@ -39,10 +58,14 @@ chrome.tabs.getSelected(null, function (tab) {
 			if (kondi === -1) {
 				console.log("ez az oldal nem rossz");
 				document.getElementById('joenekunk').innerHTML = "Oldal állapota: Nem tudunk lehetséges átverésről!";
+				// document.getElementById('jelentes').innerHTML = '<button id="btn" name="btn">Az oldal jelentése</button>';	
+				
 			};
 			if (kondi !== -1) {
 				console.log("ez az oldal rossz");
 				document.getElementById('joenekunk').innerHTML = "Oldal állapota: Átverést tartalmazhat!";
+				// document.getElementById('joenekunk').innerHTML = "Register Here";
+				// document.getElementById('joenekunk').setAttribute ("href");
 				
 				chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
 				chrome.tabs.sendMessage(tabs[0].id, {action: "open_dialog_box"}, function(response) {});

@@ -51,10 +51,6 @@ var szam = 1
 
 				document.body.style.webkitTransform = "translateY(" + toolbarHeight + "px)";
 				document.documentElement.appendChild(div);
-				if (onetime === 1) {
-					alert("VIGYÁZZ! Ez a weboldal nagy valószínűséggel átverést tartalmazhat!")
-					onetime = 0
-				}
 			}
 			
 

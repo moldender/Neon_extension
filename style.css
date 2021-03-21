@@ -1,13 +1,116 @@
 body, html {
-     height: 350px;
+     height: 300px;
      width: 350px;  
      font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
      font-size: 100%;
 }
+
 #status {
         /* avoid an excessively wide status text */
 	white-space: pre;
     text-overflow: ellipsis;
     overflow: hidden;
-    max-width: 400px;
 }	
+
+.hatter {
+	background-image: url("icon.png");	  
+	filter: blur(4px);
+	-webkit-filter: blur(4px);   
+      
+	height: 100%;
+  
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transform: scale(1.1)
+}
+
+.tartalom {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.hostname {	
+	padding-top: 2%;
+	padding-bottom: 1%;
+	text-align: center;
+}
+
+.joenekunk {	
+	padding-bottom: 1%;
+	text-align: center;
+}
+
+.jelentes {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 110%;
+  padding: 2px;
+  text-align: center;
+}
+
+.jelentes a:link {
+    color: red;
+    text-decoration: none;
+}
+
+.jelentes a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+.jelentogomb {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.kitoltes {
+  position: relative;
+  float: right;
+}
+
+.tartalomsubmit {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 10px;
+  text-align: right;
+  float: right;
+}
+
+.cTask {
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
