@@ -1,0 +1,42 @@
+body, html {
+    background-color: #0d1117;
+    font-family: sans-serif;
+}
+
+.rak {
+    position: relative;
+    left: 10%;
+    color: white;
+    display: flex;
+    width: 100%;
+
+}
+
+.fuggoben {
+    
+    
+    float: right;
+    border: 10px solid lightblue;
+    display: flex;
+    padding: 25px;
+}
+
+.elfogadott {
+    
+    position: relative;
+    float: right;
+    border: 10px solid lightblue;
+    display: flex;
+    left: 24%;
+    padding: 25px;
+    
+}
+
+.adatok {
+    
+    position: relative;
+    left: 47%;
+    border: 10px solid lightblue;
+    padding: 25px;
+    
+}
