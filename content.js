@@ -26,6 +26,8 @@ var szam = 1
 				console.log("ez az oldal nem rossz")
 			}
 			else {
+			if (kondi === 0) {return} 
+			else {
 				console.log("ez az oldal rossz")
 				
 
@@ -51,6 +53,7 @@ var szam = 1
 
 				document.body.style.webkitTransform = "translateY(" + toolbarHeight + "px)";
 				document.documentElement.appendChild(div);
+			}
 			}
 			
 

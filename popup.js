@@ -3,6 +3,10 @@ const url='https://jsonplaceholder.typicode.com/posts';
 var hostnamelink;
 var valasz;
 
+var button = document.getElementById("repogomb");
+button.addEventListener("click", function(){
+    chrome.tabs.create({url:"https://neoncommunity.ml/extension/index.php"});
+});
 
 chrome.tabs.getSelected(null, function (tab) {
 	
@@ -13,7 +17,7 @@ chrome.tabs.getSelected(null, function (tab) {
 		
 		
 		function popping() {
-			var index_url = "https://neoncommunity.ml/extension/requestpage.html?linkie=" + url;
+			var index_url = "https://neoncommunity.ml/extension/requestpage.php?linkie=" + url;
 			window.open(index_url, 'Popup Window', 'width=392,height=362,location=yes,scrollbars=yes');
 		}
 	
@@ -54,7 +58,14 @@ chrome.tabs.getSelected(null, function (tab) {
 				sendResponse({ message: "BOIIIIIIIIII" });
 			});
 
-
+			if (kondi === 0) {
+				console.log("ez az oldal nem rossz");
+				document.getElementById('joenekunk').innerHTML = "Oldal állapota: Ez egy file nagy valószínűséggel.";
+				// document.getElementById('jelentes').innerHTML = '<button id="btn" name="btn">Az oldal jelentése</button>';	
+				return;
+			
+			};
+			
 			if (kondi === -1) {
 				console.log("ez az oldal nem rossz");
 				document.getElementById('joenekunk').innerHTML = "Oldal állapota: Nem tudunk lehetséges átverésről!";

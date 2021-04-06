@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="stylesheet" href="reported.css">
    <link rel="stylesheet" href="options.css">
     <meta charset="UTF-8">
     <title>Beállitársok</title>
@@ -9,13 +10,50 @@
     <div class="but1">
           <header>
                 <ul class="li1">
-                    <li><a class="gombxd1" href="index.html">Főoldal</a></li>
-                    <li><a class="gombxd1" href="history.html">Története</a></li>
-                    <li><a class="gombxd1" href="fel.html">Felhasználás</a></li>
+                    <li><a class="gombxd1" href="reported.html">Jelentéseid</a></li>
+                    <li><a class="gombxd1" href="history.html">Általános</a></li>
+                    <li><a class="gombxd1" href="fel.html">Kapcsolat</a></li>
                 </ul>
             
         </header>
 
      </div>
+	 
+	 
+    <div class="rak">
+        <div class="elfogadott2" id="elfogadott">
+            Még nem jelentkeztél be, kérlek jelentkezz be!
+            <br>
+            
+            <div id="sql_elfogadott"> </div>
+            
+        </div>
+        <div class="adatok" id="adatok">
+            <h2>Adatok</h2>
+
+            <br>
+            Neved: <div id="adatok_nev"> </div>
+            <br>
+            <br>
+            Email címed:<div id="adatok_email"> </div>
+            <br>
+            <br>
+            Fiókodat létrehoztad ekkor: <div id="adatok_create"> </div>
+            
+            <div id="sql_adatok"> </div>
+            
+        </div> 
+    </div>
+	
+	<div class="login">
+	
+		<div class="repogomb" id="repogomb" value="tab">
+			
+			<button type="button" class="repogomb" id="repogomb">Bejelentkezés</button>
+				
+		</div>
+			
+	</div>
+	 
 </body>
 </html>

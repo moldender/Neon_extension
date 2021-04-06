@@ -1,24 +1,26 @@
 body, html {
     background-color: #0d1117;
     font-family: sans-serif;
+	height: 95%;
+	width: 95%;
 }
 
 .rak {
     position: relative;
-    left: 10%;
     color: white;
+    left: 10%;
     display: flex;
-    width: 100%;
+    width: 50%;
 
 }
 
-.fuggoben {
-    
+.fuggoben {    
     
     float: right;
     border: 10px solid lightblue;
     display: flex;
-    padding: 25px;
+    padding: 4%;
+	
 }
 
 .elfogadott {
@@ -27,16 +29,26 @@ body, html {
     float: right;
     border: 10px solid lightblue;
     display: flex;
-    left: 24%;
-    padding: 25px;
+    left: 40%;
+    padding: 4%;
     
 }
 
+.elfogadott2 {
+    
+    position: relative;
+    float: right;
+    border: 10px solid lightblue;
+    display: flex;
+    left: 60%;
+    padding: 4%;
+    
+}
 .adatok {
     
     position: relative;
-    left: 47%;
+    left: 100%;
     border: 10px solid lightblue;
-    padding: 25px;
+    padding: 4%;
     
 }

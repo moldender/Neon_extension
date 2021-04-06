@@ -57,7 +57,7 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 110%;
+  width: 100%;
   padding: 2px;
   text-align: center;
 }
@@ -73,7 +73,7 @@ body, html {
 }
 
 .jelentogomb {
-  background-color: red; /* Green */
+  background-color: red; /* red */
   border: none;
   color: white;
   padding: 7px 16px;
@@ -104,7 +104,7 @@ body, html {
 }
 
 .cTask {
-  background-color: red; /* Green */
+  background-color: red; /* red */
   border: none;
   color: white;
   padding: 7px 16px;
@@ -113,4 +113,22 @@ body, html {
   display: inline-block;
   font-size: 16px;
   border-radius: 8px;
+}
+
+.repogomb {		
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: cyan; /* cyan */
+  border: none;
+  color: black;
+  padding: 2px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 8px;
+  float: right;  
 }
