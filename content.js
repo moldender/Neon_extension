@@ -1,34 +1,35 @@
 const Http = new XMLHttpRequest();
 const url='https://jsonplaceholder.typicode.com/posts';
 var hostnamelink
-console.log('content.js')
+// console.log('content.js')
 var szam = 1
 
+// a console logok a debugginkhoz kellettek
 
-	console.log("Host: "+location.host);
+// console.log("Host: "+location.host);
 	hostnamelink = location.host
 	Http.open("GET", 'https://neoncommunity.ml/api/v2/extension/oldalak/webapi');
 	Http.send();	
 	Http.onreadystatechange = (e) => {
-		console.log(Http.responseText)
-			console.log("Host: "+location.host);
+		// console.log(Http.responseText)
+		// console.log("Host: "+location.host);
 			hostnamelink = location.host
 			var clist = Http.responseText;
 			var kondi = clist.indexOf(hostnamelink);
-			console.log(clist);
-			console.log(hostnamelink);
-			console.log(clist['edigital.hu']);
-			console.log(kondi);
+			// console.log(clist);
+			// console.log(hostnamelink);
+			// console.log(clist['edigital.hu']);
+			// console.log(kondi);
 			var kondi = clist.indexOf(hostnamelink);
 			var onetime = 1
 						
 			if (kondi === -1) {
-				console.log("ez az oldal nem rossz")
+				// console.log("ez az oldal nem rossz")
 			}
 			else {
 			if (kondi === 0) {return} 
 			else {
-				console.log("ez az oldal rossz")
+				// console.log("ez az oldal rossz")
 				
 
 				var toolbarHeight = 30;

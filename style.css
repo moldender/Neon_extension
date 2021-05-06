@@ -12,8 +12,9 @@ body, html {
     overflow: hidden;
 }	
 
+
 .hatter {
-	background-image: url("icon.png");	  
+	background-image: url("icon.png");
 	filter: blur(4px);
 	-webkit-filter: blur(4px);   
       

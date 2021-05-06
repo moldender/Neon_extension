@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Neon bővítmény",
-  "description": "Az első funkciógazdag verzió",
-  "version": "2.0",
+  "description": "Az utolsó verzió",
+  "version": "2.2",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
